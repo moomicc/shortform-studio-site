@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f6f4" />
+    <meta name="description" content="Shortform Studio — 내 컴퓨터에서 영상을 분석하고 CapCut 편집 프로젝트 초안을 만드는 로컬 우선 숏폼 제작 도구." />
+    <title>Shortform Studio — 로컬 숏폼 제작</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav wrap">
+      <a class="brand" href="#top" aria-label="Shortform Studio 홈"><span class="brand-mark">S</span><span>Shortform Studio</span></a>
+      <nav><a href="#features">기능</a><a href="#compatibility">호환성</a><a href="#privacy">개인정보</a></nav>
+      <a class="nav-link" href="https://github.com/moomicc/shortform-studio-site/releases">릴리스 확인 ↗</a>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">LOCAL-FIRST · CAPCUT DRAFT BRIDGE</p>
+          <h1>숏폼 제작은 내 컴퓨터에서.<br /><span>수정은 CapCut에서.</span></h1>
+          <p class="lede">영상을 분석해 컷·자막·음악이 분리된 편집 초안을 만들고, 마지막 손질은 익숙한 CapCut에서 이어가세요.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/moomicc/shortform-studio-site/releases">설치 파일 상태 보기</a>
+            <a class="button secondary" href="#how">작동 방식</a>
+          </div>
+          <p class="release-status"><span class="status-dot"></span> Mac·Windows 패키지의 자동 검증은 통과했습니다. 일반 사용자용 설치 검증과 정식 배포 준비 중이며, 아직 공식 설치 파일은 공개되지 않았습니다.</p>
+        </div>
+        <div class="hero-art" aria-label="영상에서 편집 초안으로 이어지는 흐름을 표현한 그래픽" role="img">
+          <div class="preview-card source-card"><div class="mock-frame"><span class="sun"></span><span class="hill hill-a"></span><span class="hill hill-b"></span><span class="subject">✦</span></div><small>원본 영상</small></div>
+          <div class="arrow">→</div>
+          <div class="preview-card timeline-card"><div class="mock-screen"><span>SHORTFORM<br />STUDIO</span></div><div class="track track-one"></div><div class="track track-two"></div><div class="track track-three"></div><small>편집 가능한 초안</small></div>
+        </div>
+      </section>
+
+      <section class="trust-strip"><div class="wrap trust-items"><span>원본·프로젝트는 내 기기에 보관</span><span>CapCut 프로젝트로 이어서 수정</span><span>사용자 API 키 직접 관리</span></div></section>
+
+      <section id="features" class="section wrap">
+        <p class="eyebrow">WHAT IT DOES</p><h2>완성 영상 하나로 끝내지 않아요</h2>
+        <div class="feature-grid">
+          <article><span class="icon">01</span><h3>장면을 읽고 컷 편집</h3><p>영상 길이와 장면 흐름을 보고 주요 구간을 고른 뒤, 숏폼 화면에 맞는 편집 초안을 구성합니다.</p></article>
+          <article><span class="icon">02</span><h3>자막·음악은 별도 레이어</h3><p>CapCut에서 문구와 타이밍을 직접 고칠 수 있도록 자막과 지원되는 오디오 요소를 분리해 전달합니다.</p></article>
+          <article><span class="icon">03</span><h3>내 기기에서 이어서 작업</h3><p>소스 영상과 결과물은 각 사용자 컴퓨터에 보관됩니다. 프로젝트를 열어 확인하고 마무리하세요.</p></article>
+        </div>
+      </section>
+
+      <section id="how" class="how-section"><div class="wrap how-grid"><div><p class="eyebrow">HOW IT WORKS</p><h2>세 단계로 CapCut까지</h2></div><ol><li><b>1</b><span><strong>로컬 앱 실행</strong><small>이 컴퓨터에 앱과 필요한 도구를 설치합니다.</small></span></li><li><b>2</b><span><strong>영상 선택 후 초안 생성</strong><small>영상 처리와 작업 데이터는 로컬에 남습니다. AI 기능은 본인 API 키와 별도 사용료가 필요합니다.</small></span></li><li><b>3</b><span><strong>CapCut에서 검토·마무리</strong><small>생성된 편집 프로젝트를 열어 컷과 자막을 직접 다듬습니다.</small></span></li></ol></div></section>
+
+      <section id="compatibility" class="section wrap">
+        <p class="eyebrow">COMPATIBILITY</p><h2>다운로드 전에 확인해 주세요</h2>
+        <div class="compat-grid">
+          <article><h3>macOS</h3><p>Intel·Apple Silicon 네이티브 패키지의 CI 실행·화면·합성 렌더 검증을 통과했습니다. 일반 사용자 Mac의 설치, FFmpeg 준비, 서명·공증과 CapCut 확인은 아직 남았습니다.</p><span class="pill pending">패키지 CI 통과 · 정식 배포 전</span></article>
+          <article><h3>Windows</h3><p>x64 패키지와 사용자별 설치·실행·제거가 CI에서 통과했습니다. 일반 사용자 PC의 설치, FFmpeg 준비와 CapCut 프로젝트 호환성은 아직 확인되지 않았습니다.</p><span class="pill pending">패키지 CI 통과 · 정식 배포 전</span></article>
+        </div>
+        <p class="small-note">CapCut과 FFmpeg/FFprobe는 별도 구성요소입니다. CapCut 버전, 템플릿, 코덱 및 컴퓨터별 환경에 따라 지원 여부가 달라질 수 있습니다.</p>
+      </section>
+
+      <section id="privacy" class="privacy-section"><div class="wrap privacy-grid"><div><p class="eyebrow">PRIVACY BY DEFAULT</p><h2>원본과 프로젝트는 내 기기에 보관</h2></div><div><p>Shortform Studio는 로컬 우선 앱입니다. 원본 전체 영상 파일과 생성 결과·CapCut 프로젝트는 이 컴퓨터에서 처리하고 보관하도록 설계했습니다.</p><p>AI 분석을 켜면 장면 분석에 필요한 일부 프레임과 분석 텍스트가 사용자가 설정한 OpenAI API로 전송됩니다. 해당 API 계정 사용량에 따라 요금이 발생할 수 있습니다. 웹 페이지는 영상이나 API 키를 수집하지 않습니다. 웹 호스팅 사업자는 서비스 보안 목적으로 방문자의 IP 주소 등 연결 정보를 처리할 수 있습니다.</p></div></div></section>
+
+      <section class="final-cta wrap"><div><p class="eyebrow">DOWNLOADS</p><h2>검증된 설치 파일이 준비되면 여기서 안내합니다.</h2><p>미검증 빌드나 테스트 산출물을 공식 설치 파일로 표시하지 않습니다.</p></div><a class="button primary" href="https://github.com/moomicc/shortform-studio-site/releases">GitHub 릴리스 확인 ↗</a></section>
+    </main>
+
+    <footer class="wrap footer"><a class="brand" href="#top"><span class="brand-mark">S</span><span>Shortform Studio</span></a><span>로컬 우선 숏폼 제작 도구 · 정식 설치 파일 준비 중</span><a href="https://github.com/moomicc/shortform-studio-site/releases">릴리스 안내 ↗</a></footer>
+  </body>
+</html>
